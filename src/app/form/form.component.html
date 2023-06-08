@@ -28,7 +28,7 @@
     </fieldset>
     <fieldset>
         <label for="mail">E-Mail</label>*
-        <input [(ngModel)]="model.mail" #mail="ngModel" type="email" id="mail" name="mail" required pattern="^[A-Za-z0-9._%\-]+@[A-Za-z0-9._%\-]+\\.[a-z]{2,3}$">
+        <input [(ngModel)]="model.mail" #mail="ngModel" type="email" id="mail" name="mail" required pattern="^[A-Za-z0-9._%\-]+@[A-Za-z0-9._%\-]+\.[a-z]{2,3}$">
         <div *ngIf="form.submitted && mail.errors">
             <span *ngIf="mail.errors?.['required']">Une addresse mail est requise</span>
             <span *ngIf="mail.errors?.['pattern']">L'addresse mail est invalide</span>
